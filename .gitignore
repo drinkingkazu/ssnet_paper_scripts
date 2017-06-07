@@ -1,0 +1,6 @@
+*.log
+*.txt
+*.csv
+*.h5
+*.prototxt
+*.root
