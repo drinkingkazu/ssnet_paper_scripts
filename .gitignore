@@ -4,3 +4,5 @@
 *.h5
 *.prototxt
 *.root
+*.ipynb
+.ipynb_checkpoints
