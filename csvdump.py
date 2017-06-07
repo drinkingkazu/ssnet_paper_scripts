@@ -1,6 +1,6 @@
 import os, sys
 
-DATA_DIR= '/data/drinkingkazu/UBDeconvNet/dlmc_mcc8_multipvtx_v01'
+DATA_DIR= os.getcwd()
 if not sys.argv[1].find('caffemodel') >=0:
     sys.stderr.write('caffemodel file must be the 1st argument\n')
     sys.exit(1)
