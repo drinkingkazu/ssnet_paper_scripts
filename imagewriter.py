@@ -18,13 +18,13 @@ for argv in sys.argv:
         GPUMEM = int(argv.replace('gpumem=',''))
 
 PROTO   = "%s/ana.prototxt" % DATA_DIR
-CSVNAME = MODEL.replace('.caffemodel.h5','.csv')
+ROOTNAME = MODEL.replace('.caffemodel.h5','.root')
 
-if CSVNAME == MODEL:
-    print 'Could not rename MODEL to CSV ...'
+if ROOTNAME == MODEL:
+    print 'Could not rename MODEL to ROOT ...'
     sys.exit(1)
-if os.path.isfile(CSVNAME):
-    print 'Already processed:',CSVNAME
+if os.path.isfile(ROOTNAME):
+    print 'Already processed:',ROOTNAME
     sys.exit(1)
 if not os.path.isfile(PROTO):
     print 'PROTO not found:',PROTO
@@ -60,6 +60,7 @@ for argv in sys.argv:
 
 proc = larcv.ProcessDriver('OutputProcessDriver')
 proc.configure(ANA_OUTPUT_CFG)
+proc.override_output_file(ROOTNAME)
 proc.initialize()
 
 py_image_maker = proc.process_ptr(proc.process_id("PyImageMaker"))
