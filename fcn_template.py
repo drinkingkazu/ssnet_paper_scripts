@@ -12,7 +12,7 @@ layer {
     root_data_param {
       use_thread: false
       batch_size: 150
-      filler_config: "/data/vgenty/UBFCN/dlmc_mcc8_multipvtx_v01/fcn8_yesspweights_drop_pretrain/ana_filler.cfg"
+      filler_config: "CONFIG_NAME"
       filler_name: "DataFiller"
     }
 }
