@@ -4,7 +4,11 @@ import pandas as pd
 files = [f for f in os.listdir('.') if f.startswith(sys.argv[1]) and f.endswith('.csv')]
 files_m = {}
 for f in files:
-    files_m[int(f.replace('.csv','').split('_')[-1])]=f
+    words=f.replace('.csv','').split('_')
+    for i,word in enumerate(words):
+        if word == 'iter' and words[i+1].isdigit():
+            files_m[int(words[i+1])]=f
+            break
 
 keys=files_m.keys()
 keys.sort()

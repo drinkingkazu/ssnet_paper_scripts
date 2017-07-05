@@ -23,7 +23,7 @@ DataFiller: {
       ClassTypeDef:      [0,0,0,3,3,3,6,6,6,6]
       ClassTypeList:     [3,6]
       Channels:          [PLANE]
-      SegChannel:        2
+      SegChannel:        PLANE
       EnableMirror:      false
     }
   }

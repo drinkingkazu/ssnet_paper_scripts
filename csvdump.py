@@ -5,11 +5,11 @@ if not sys.argv[1].find('caffemodel') >=0:
     sys.stderr.write('caffemodel file must be the 1st argument\n')
     sys.exit(1)
 
-AVAILABLE_FLAVOUR = {'val'  : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_multipvtx_v01/val.root',
-                     '1e1p' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_multipvtx_v01/val_1e1p.root',
-                     'nue'  : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_multipvtx_v01/val_nue.root',
-                     'numu' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_multipvtx_v01/val_numu.root',
-                     '1e1p_lowE' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_multipvtx_v01/val_1e1p_lowE.root'
+AVAILABLE_FLAVOUR = {'val'  : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_ssnet/process/val.root',
+                     '1e1p' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_ssnet/process/test_1e1p_01.root',
+                     'nue'  : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_ssnet/process/test_nue_00.root',
+                     'numu' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_ssnet/process/test_numu_00.root',
+                     '1e1p_lowE' : '/stage2/drinkingkazu/dl_production_v01/dlmc_mcc8_ssnet/process/test_1e1p_lowE_01.root'
                      }
 
 MODEL        = sys.argv[1]

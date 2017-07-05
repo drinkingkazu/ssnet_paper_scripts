@@ -11,5 +11,5 @@ echo $$ > ${LOCKFILE}
 
 source /home/drinkingkazu/sw/larcv/configure.sh
 source /home/drinkingkazu/sw/caffe_devel/configure.sh
-python /data/drinkingkazu/UBDeconvNet/dlmc_mcc8_multipvtx_v01/run_csvdump.py $1 $2 gpumem=10000
+python /data/drinkingkazu/UBDeconvNet/dlmc_mcc8_multipvtx_v01/run_csvdump.py $1 $2 $3 $4 gpumem=10000
  
